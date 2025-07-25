@@ -12,7 +12,7 @@ class SignupView(generics.CreateAPIView):
         serializer.is_valid(raise_exception=True)
         user = serializer.save()
         token, _ = Token.objects.get_or_create(user=user)
-        return Response({'token': token.key}, status=status.HTTP_201_CREATED)
+        return Response({'id': user.id, 'username': user.username, 'token': token.key}, status=status.HTTP_201_CREATED)
 
 class LoginView(generics.GenericAPIView):
     serializer_class = UserSerializer

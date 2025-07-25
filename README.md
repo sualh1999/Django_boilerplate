@@ -33,7 +33,7 @@ This is a basic Django authentication API with signup, login, and logout endpoin
 
 *   **Signup:** `POST /api/auth/signup/`
     *   **Send:** `username`, `password`
-    *   **Receive:** `id`, `username`
+    *   **Receive:** `id`, `username`, `token`
 
 *   **Login:** `POST /api/auth/login/`
     *   **Send:** `username`, `password`
