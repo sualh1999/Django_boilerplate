@@ -1,0 +1,29 @@
+# Byte-code files
+*.pyc
+__pycache__/
+
+# Django stuff:
+*.log
+*.pot
+*.mo
+db.sqlite3
+media/
+static_root/
+
+# Virtual environment
+virtualenv/
+virtualenvs/
+virtual-env/
+virtual_env/
+v_env/
+v_envs/
+venv/
+.venv/
+
+# IDEs and other tools
+.idea/
+.vscode/
+.DS_Store
+*.swp
+*~
+.env
